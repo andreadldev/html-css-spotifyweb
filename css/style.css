@@ -2,6 +2,11 @@
 @import "common.css";
 @import "typography.css";
 
+body {
+    height: 100vh;
+    background-color: var(--inner);
+}
+
 /* ====================================
    -----------TOOLBAR SOPRA------------ 
    ==================================== */
@@ -28,15 +33,80 @@
 }
 
 /* ====================================
+   ----------LAYOUT CENTRALE----------- 
+   ==================================== */
+
+#inner-layout {
+    padding-left: 230px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: yellow;
+    position: relative;
+}
+
+#inner-layout nav {
+    padding: 10px 0;
+}
+
+#inner-layout nav li {
+    width: calc(100% / 5);
+}
+
+/* RESPONSIVE MD */
+@media screen and ( max-width: 1100px ) {
+    #inner-layout nav {
+        background-color: orange;
+    }
+
+    #inner-layout nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #inner-layout nav li:last-child {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ====================================
+   --------------SIDEBAR--------------- 
+   ==================================== */
+
+#sidebar {
+    background-color: black;
+    width: 230px;
+    height: 100%;
+    z-index: 15;
+    color: yellow;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* RESPONSIVE XS */
+@media screen and ( max-width: 600px ) {
+    #sidebar {
+        width: 50px;
+    }
+
+    #inner-layout {
+        padding-left: 50px;
+    }
+}
+
+/* ====================================
    -----------TOOLBAR SOTTO------------ 
    ==================================== */
 
-#toolbar-bottom {
+   #toolbar-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 20;
 
     color: white;
     height: 90px;

@@ -2,6 +2,37 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ====================================
+   -----------TOOLBAR SOPRA------------ 
+   ==================================== */
+
 #btn-upgrade {
     font-weight: bold;
+}
+
+/* ====================================
+   ----------LAYOUT CENTRALE----------- 
+   ==================================== */
+
+#inner-layout nav {
+    color: var(--grey);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+#inner-layout nav li {
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#inner-layout nav li:hover:after {
+    content: '';
+    display:block;
+    position:absolute;
+    bottom:-2px;
+    left: 30%;
+    right: 30%;
+    height: 2px;
+    background: #adff2f;
 }
