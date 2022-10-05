@@ -1,3 +1,44 @@
 @import "reset.css";
 @import "common.css";
 @import "typography.css";
+
+/* ====================================
+   -----------TOOLBAR SOPRA------------ 
+   ==================================== */
+
+#toolbar-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    background-color: var(--toolbar-top);
+    height: 90px;
+    padding: 7px 9px;
+}
+
+#btn-upgrade {
+    border: 1px solid white;
+    background-color: var(--toolbar-top);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* ====================================
+   -----------TOOLBAR SOTTO------------ 
+   ==================================== */
+
+#toolbar-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    color: white;
+    height: 90px;
+    background-color: var(--toolbar-bottom);
+}

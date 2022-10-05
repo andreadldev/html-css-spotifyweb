@@ -1,10 +1,15 @@
+body {
+    height: 100vh;
+    background-color: red;
+}
+
 /* ==============================
    ------------COLORI------------ 
    ============================== */
 
 :root {
-    --header: #080b12;
-    --toolbar: #282828;
+    --toolbar-top: #080b12;
+    --toolbar-bottom: #282828;
     --grey: #7d7f84;
     --sidebar-icon: #d2d2d2;
 }
@@ -12,7 +17,7 @@
 /* ==============================
    -------------FLEX------------- 
    ============================== */
-   
+
 .flex {
     display: flex;
 }
@@ -22,17 +27,21 @@
     flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .justify-center {
     justify-content: center;
 }
 
-.justify-space-between {
-    justify-content: space-between;
+.justify-end {
+    justify-content: flex-end;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+.justify-space-between {
+    justify-content: space-between;
 }
 
 .align-items-center {
