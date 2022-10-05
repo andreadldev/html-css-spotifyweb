@@ -1,0 +1,44 @@
+/* ==============================
+   ------------COLORI------------ 
+   ============================== */
+
+:root {
+    --header: #080b12;
+    --toolbar: #282828;
+    --grey: #7d7f84;
+    --sidebar-icon: #d2d2d2;
+}
+
+/* ==============================
+   -------------FLEX------------- 
+   ============================== */
+   
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
