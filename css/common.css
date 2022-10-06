@@ -7,6 +7,20 @@
     padding: 0 12px;
 }
 
+.container {
+    max-width: 100%;
+    padding: 50px 0px;
+    padding-left: 55px;
+    padding-right: 35px;
+}
+
+@media screen and ( max-width: 1130px ) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 /* ==============================
    ------------COLORI------------ 
    ============================== */

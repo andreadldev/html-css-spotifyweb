@@ -40,7 +40,7 @@ body {
     padding-left: 230px;
     padding-top: 65px;
     padding-bottom: 90px;
-    color: yellow;
+    color: white;
     position: relative;
     overflow-y: auto;
 }
@@ -54,11 +54,28 @@ body {
     padding-top: 40px;
 }
 
+.row {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.album {
+    margin: 0 10px;
+}
+
+/* .section-title {
+    width: 100%;
+} */
+
+#first {
+    margin-top: -45px;
+}
+
 /* RESPONSIVE MD */
 @media screen and ( max-width: 1100px ) {
 
     #inner-layout nav ul {
-        display: flex;
+       display: flex;
        flex-wrap: wrap;
     }
 
@@ -67,6 +84,29 @@ body {
         text-align: center;
     }
 
+    .recently-played {
+        /* text-align: center; */
+        padding-left: 10%;
+        /* padding-right: 6%; */
+    }
+
+    .row {
+        /* flex-wrap: nowrap; */
+    }
+
+    .recently-played .row {
+        /* width: 100%; */
+        /* justify-content: space-between; */
+    }
+
+    .album {
+        width: calc(100%/2 - 20px);
+    }
+
+    .album img {
+        max-width: 100%;
+        max-height: calc(50vw / 2);
+    }
 }
 
 /* RESPONSIVE S */
@@ -87,6 +127,30 @@ body {
         position: relative;
         left: 15px;
     } 
+
+    .recently-played {
+        /* text-align: center; */
+        padding-left: 5%;
+        /* padding-right: 6%; */
+    }
+
+}
+
+/* RESPONSIVE XS */
+@media screen and ( max-width: 600px ) {
+
+    .album img {
+        min-width: 175px;
+        max-width: 175px;
+        min-height: 175px;
+        max-height: 175px;
+    }
+
+    .recently-played {
+        /* text-align: center; */
+        padding-left: 0;
+        /* padding-right: 6%; */
+    }
 }
 
 /* ====================================

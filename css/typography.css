@@ -32,14 +32,26 @@
 
 #inner-layout nav li:first-child:after {
     content: '';
-    display:block;
-    position:absolute;
+    display: block;
+    position: absolute;
     bottom: -3px;
     left: 30%;
     right: 30%;
     height: 2px;
     background: #adff2f;
 }
+
+.recently-played h2 {
+    font-size: 1.45rem;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/* .recently-played h3,
+.recently-played span {
+    text-align: center;
+} */
 
 /* ====================================
    --------------SIDEBAR--------------- 
