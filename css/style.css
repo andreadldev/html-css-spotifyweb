@@ -56,9 +56,6 @@ body {
 
 /* RESPONSIVE MD */
 @media screen and ( max-width: 1100px ) {
-    /* #inner-layout nav {
-        background-color: orange;
-    } */
 
     #inner-layout nav ul {
         display: flex;
@@ -303,14 +300,12 @@ body {
 }
 
 .toolbar {
-    /* border: 1px solid violet; */
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-/* SINISTRA */
 .toolbar.left {
     justify-content: space-between;
     width: 20%;
@@ -318,13 +313,19 @@ body {
 
 .toolbar.center {
     justify-content: center;
-    width: 80%;
+    width: 40%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .toolbar.right {
     justify-content: flex-end;
     width: 20%;
+    position: relative;
+    right: -15px;
 }
+
+/* SINISTRA */
 
 .song * {
     padding-left: 5px;
@@ -348,6 +349,7 @@ body {
 
 .icons {
     padding-left: 10px;
+    padding-right: 30%;
 }
 
 .icons * {
@@ -361,6 +363,7 @@ body {
 }
 
 /* CENTRO */
+
 .toolbar.center .top {
     padding: 0 20px;
     padding-bottom: 10px;
@@ -379,18 +382,22 @@ body {
 
 .progress-bar {
     background-color: grey;
-    width: 50%;
+    width: 70%;
+    min-width: 70px;
     margin: 0 20px;
-    height: 2px;
+    height: 3px;
     position: relative;
+    border-radius: 20px;
+    top: -1px;
 }
 
 .progress-bar:before {
     content: "";
     display: block;
     width: 15%;
-    height: 2px;
+    height: 3px;
     background-color: lightgray;
+    border-radius: 20px;
 }
 
 .progress-bar:after {
@@ -404,6 +411,24 @@ body {
 }
 
 /* DESTRA */
+
+.toolbar.right i {
+    padding-left: 5%;
+    color: lightgray;
+    cursor: pointer;
+    font-size: smaller;
+}
+
+.toolbar.right i:hover {
+    color: white;
+}
+
+.toolbar.right .progress-bar,
+.toolbar.right .progress-bar:after {
+    top: 1px;
+    left: -8px;
+    min-width: 25px;
+}
 
 /* RESPONSIVE S */
 @media screen and ( max-width: 700px ) {
@@ -438,4 +463,9 @@ body {
         position: relative;
         top: 3px;
     }
+
+    .toolbar.right i {
+        padding-left: 10%;
+    }
+
 }
