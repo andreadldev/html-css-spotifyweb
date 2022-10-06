@@ -290,7 +290,7 @@ body {
    -----------TOOLBAR SOTTO------------ 
    ==================================== */
 
-   #toolbar-bottom {
+#toolbar-bottom {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -300,4 +300,142 @@ body {
     color: white;
     height: 90px;
     background-color: var(--toolbar-bottom);
+}
+
+.toolbar {
+    /* border: 1px solid violet; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* SINISTRA */
+.toolbar.left {
+    justify-content: space-between;
+    width: 20%;
+}
+
+.toolbar.center {
+    justify-content: center;
+    width: 80%;
+}
+
+.toolbar.right {
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.song * {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.song img {
+    width: 42px;
+}
+
+.song span {
+    position: relative;
+    top: 4px;
+}
+
+.song span:last-child {
+    color: gray;
+    white-space: nowrap;
+    display: block;
+}
+
+.icons {
+    padding-left: 10px;
+}
+
+.icons * {
+    padding: 0 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.icons *:hover {
+    color: white;
+}
+
+/* CENTRO */
+.toolbar.center .top {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    width: 190px;
+}
+
+.toolbar.center .bottom {
+    width: 100%;
+    position: relative;
+    padding: 0 35px;
+}
+
+.toolbar.center .bottom span {
+    margin-bottom: 2px;
+}
+
+.progress-bar {
+    background-color: grey;
+    width: 50%;
+    margin: 0 20px;
+    height: 2px;
+    position: relative;
+}
+
+.progress-bar:before {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 2px;
+    background-color: lightgray;
+}
+
+.progress-bar:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    top: -5px;
+    cursor: pointer;
+}
+
+/* DESTRA */
+
+/* RESPONSIVE S */
+@media screen and ( max-width: 700px ) {
+
+    .song span {
+        top: 0;
+    }
+
+    .song img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icons i:first-child {
+        margin-bottom: 5px;
+    }
+
+}
+
+/* RESPONSIVE XS */
+@media screen and ( max-width: 600px ) {
+
+    .song span:last-child {
+        white-space: normal;
+    }
+
+    .song {
+        position: relative;
+        top: 3px;
+    }
 }

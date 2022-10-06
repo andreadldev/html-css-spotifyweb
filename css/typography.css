@@ -51,11 +51,43 @@
 
 .playlist h3 {
     color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .sidebar-bottom #download span {
     position: relative;
     top: 1px;
-    font-size: 10px;
+    font-size: 0.625rem;
+}
+
+/* ====================================
+   -----------TOOLBAR SOTTO------------ 
+   ==================================== */
+
+/* SINISTRA */
+.song span {
+    font-size: 0.625rem;
+    font-weight: bold;
+}
+
+.song span:first-child {
+    font-weight: bold;
+}
+
+/* CENTRO */
+.toolbar.center .top i {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.toolbar.center .top i:nth-child(3) {
+    font-size: 1.625rem;
+    padding: 0 5px;
+    position: relative;
+    top: -4px;
+}
+
+.toolbar.center span {
+    font-weight: bold;
+    font-size: 0.625rem;
 }
