@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
 }
 
 /* ====================================
@@ -17,7 +18,10 @@
 #inner-layout nav {
     color: var(--grey);
     font-weight: bold;
-    font-size: 0.850rem;
+}
+
+#inner-layout nav li:hover {
+    color: lightgray;
 }
 
 #inner-layout nav li {
@@ -26,13 +30,32 @@
     cursor: pointer;
 }
 
-#inner-layout nav li:hover:after {
+#inner-layout nav li:first-child:after {
     content: '';
     display:block;
     position:absolute;
-    bottom:-2px;
+    bottom: -3px;
     left: 30%;
     right: 30%;
     height: 2px;
     background: #adff2f;
+}
+
+/* ====================================
+   --------------SIDEBAR--------------- 
+   ==================================== */
+
+#sidebar {
+    font-weight: 500;
+}
+
+.playlist h3 {
+    color: white;
+    font-size: 14px;
+}
+
+.sidebar-bottom #download span {
+    position: relative;
+    top: 1px;
+    font-size: 10px;
 }
