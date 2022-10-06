@@ -54,40 +54,34 @@
     font-size: 0.875rem;
 }
 
-.sidebar-bottom #download span {
-    position: relative;
-    top: 1px;
-    font-size: 0.625rem;
-}
-
 /* ====================================
    -----------TOOLBAR SOTTO------------ 
    ==================================== */
 
 /* SINISTRA */
-.song span {
-    font-size: 0.625rem;
-    font-weight: bold;
-}
-
+.song span,
 .song span:first-child {
     font-weight: bold;
 }
 
+.icons i{
+    font-size: 1.2rem;
+}
+
 /* CENTRO */
 .toolbar.center .top i {
-    font-size: 1rem;
+    font-size: 1.125rem;
     cursor: pointer;
 }
 
 .toolbar.center .top i:nth-child(3) {
-    font-size: 1.625rem;
+    font-size: 2rem;
     padding: 0 5px;
     position: relative;
-    top: -4px;
+    top: -6px;
 }
 
 .toolbar.center span {
     font-weight: bold;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
 }
