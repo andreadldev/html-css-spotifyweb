@@ -73,7 +73,7 @@
 
 .album-section:first-of-type h2 {
     margin-top: 25px;
-    margin-bottom: -25px;
+    margin-bottom: -55px;
 }
 
 /* ====================================
@@ -107,6 +107,10 @@
 .toolbar.center .top i {
     font-size: 1.125rem;
     cursor: pointer;
+}
+
+.toolbar.center .top i:nth-child(3):hover {
+    transform: scale(1.15);
 }
 
 .toolbar.center .top i:nth-child(3) {

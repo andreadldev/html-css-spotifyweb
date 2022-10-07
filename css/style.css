@@ -18,7 +18,7 @@ body {
     right: 0;
     z-index: 10;
 
-    background-color: var(--toolbar-top);
+    background-color: #0000005e;
     height: 90px;
     padding: 7px 9px;
 }
@@ -30,6 +30,12 @@ body {
     padding: 15px 30px;
     border-radius: 50px;
     cursor: pointer;
+    margin-right: 25px;
+    transition: transform 0.1s;
+}
+
+#btn-upgrade:hover {
+    transform: scale(1.05);
 }
 
 /* ====================================
@@ -109,6 +115,17 @@ body {
     margin-top: -74px;
 }
 
+#heavymetal img,
+#heavymetal h3,
+#heavymetal span {
+    position: relative;
+    top: 29px;
+}
+
+#heavymetal .playbutton {
+    top: 29px;
+}
+
 /* RESPONSIVE MD */
 @media screen and ( max-width: 1100px ) {
 
@@ -145,6 +162,13 @@ body {
         height: 25vw;
     }
 
+    #strangerthings .album-info {
+        width: 25vw;
+    }
+
+    #heavymetal .album-info {
+        height: 15vw
+    }
 
 }
 
@@ -193,6 +217,11 @@ body {
         width: 175px;
         height: 175px;
     }
+
+    #strangerthings .album-info {
+        width: 175px;
+        height: 140px;
+    }
     
 }
 
@@ -238,6 +267,21 @@ body {
 .sidebar-menu {
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+.nav-top .sidebar-menu:first-child {
+    position: relative;
+}
+
+.nav-top .sidebar-menu:first-child:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: #adff2f;
+    position: absolute;
+    top: -2px;
+    left: -15px;
 }
 
 .nav-top .sidebar-menu:first-child span, 
