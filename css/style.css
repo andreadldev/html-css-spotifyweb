@@ -3,8 +3,8 @@
 @import "typography.css";
 
 body {
-    height: 100vh;
     background-color: var(--inner);
+    overflow: hidden;
 }
 
 /* ====================================
@@ -43,32 +43,38 @@ body {
     color: white;
     position: relative;
     overflow-y: auto;
+    height: 100vh;
 }
 
 #inner-layout nav {
     padding: 0 15px;
 }
 
-
 #inner-layout nav li {
     padding-top: 40px;
 }
 
 .row {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100%;
 }
 
 .album {
     margin: 0 10px;
+    text-align: left;
 }
 
-/* .section-title {
-    width: 100%;
-} */
+.album-info {
+    width: 240px;
+    text-align: center;
+}
 
-#first {
-    margin-top: -45px;
+.section-title {
+    position: relative;
+}
+
+.first {
+    margin-top: -74px;
 }
 
 /* RESPONSIVE MD */
@@ -84,19 +90,8 @@ body {
         text-align: center;
     }
 
-    .recently-played {
-        /* text-align: center; */
+    .album-section {
         padding-left: 10%;
-        /* padding-right: 6%; */
-    }
-
-    .row {
-        /* flex-wrap: nowrap; */
-    }
-
-    .recently-played .row {
-        /* width: 100%; */
-        /* justify-content: space-between; */
     }
 
     .album {
@@ -105,7 +100,12 @@ body {
 
     .album img {
         max-width: 100%;
-        max-height: calc(50vw / 2);
+        max-height: calc(50vw /2);
+    }
+
+    .album-info {
+        max-width: 90%;
+        min-width: 150px;
     }
 }
 
@@ -128,10 +128,12 @@ body {
         left: 15px;
     } 
 
-    .recently-played {
-        /* text-align: center; */
+    .album-section {
         padding-left: 5%;
-        /* padding-right: 6%; */
+    }
+
+    .album-info {
+        max-width: 95%;
     }
 
 }
@@ -140,16 +142,15 @@ body {
 @media screen and ( max-width: 600px ) {
 
     .album img {
-        min-width: 175px;
-        max-width: 175px;
         min-height: 175px;
-        max-height: 175px;
     }
 
-    .recently-played {
-        /* text-align: center; */
-        padding-left: 0;
-        /* padding-right: 6%; */
+    .album-section {
+        padding-left: 3%;
+    }
+
+    .album-info {
+        width: 175px;
     }
 }
 

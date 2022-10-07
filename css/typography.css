@@ -41,17 +41,40 @@
     background: #adff2f;
 }
 
-.recently-played h2 {
+#inner-layout h2 {
     font-size: 1.45rem;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     white-space: nowrap;
     text-align: left;
 }
 
-/* .recently-played h3,
-.recently-played span {
-    text-align: center;
-} */
+#inner-layout span {
+    font-weight: bold;
+    color: gray;
+}
+
+#inner-layout span {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#inner-layout h3 {
+    padding: 10px 0;
+    font-size: 1.30rem;
+}
+
+.section-title h4 {
+    position: absolute;
+    white-space: nowrap;
+    top: 35px;
+    left: 0;
+    color: gray;
+}
+
+.album-section:first-of-type h2 {
+    margin-top: 25px;
+    margin-bottom: -25px;
+}
 
 /* ====================================
    --------------SIDEBAR--------------- 
