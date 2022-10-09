@@ -533,29 +533,42 @@ body {
     width: 70%;
     min-width: 70px;
     margin: 0 20px;
-    height: 3px;
+    height: 4px;
     position: relative;
     border-radius: 20px;
     top: -1px;
+    cursor: pointer;
 }
 
 .progress-bar:before {
     content: "";
     display: block;
     width: 15%;
-    height: 3px;
+    height: 4px;
     background-color: lightgray;
     border-radius: 20px;
 }
 
-.progress-bar:after {
+.progress-bar:hover:before {
     content: "";
     display: block;
-    width: 100%;
-    height: 12px;
+    width: 15%;
+    height: 4px;
+    background-color:#adff2f;
+    border-radius: 20px;
+}
+
+.progress-bar:hover:after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 15px;
+    height: 15px;
     position: absolute;
-    top: -5px;
+    top: -6px;
+    left: 13%;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 /* DESTRA */
@@ -570,11 +583,18 @@ body {
     color: white;
 }
 
-.toolbar.right .progress-bar,
-.toolbar.right .progress-bar:after {
+.toolbar.right .progress-bar {
     top: 1px;
     left: -8px;
     min-width: 55px;
+}
+
+.toolbar.right .progress-bar:after {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: 12%;
 }
 
 /* RESPONSIVE S */
@@ -586,6 +606,11 @@ body {
 
     .icons i:first-child {
         margin-bottom: 5px;
+    }
+
+    .progress-bar:hover:after,
+    .toolbar.right .progress-bar:after {
+        left: 5%;
     }
 
 }
